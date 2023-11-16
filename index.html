@@ -9,11 +9,13 @@
   <body>
     <header>
       <nav>
-        <ul>
-          <a href="#">Introduce</a>
-          <a href="#">Skill</a>
-          <a href="#">Project</a>
-          <a href="#">Contact</a>
+        <ul class="navlist">
+          <li><a href="#">Introduce</a></li>
+          <li><a href="#">Skill</a></li>
+          <li><a href="#">Creative Menu Hover Effects</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Contact</a></li>
+          <div id="cursor"></div>
         </ul>
       </nav>
     </header>
@@ -64,14 +66,14 @@
       <section>
         <h1>Contact</h1>
         <div>
-          <a href="#">
+          <div id="copyText" onclick="copyText()">
             <span>Mobile</span>
             <p>778-829-2686</p>
-          </a>
-          <a href="#">
+          </div>
+          <div id="copyText" onclick="copyText()">
             <span>Email</span>
             <p>gyeongjin.lee53@gmail.com</p>
-          </a>
+          </div>
           <a href="https://github.com/HiGyeongjin" target="_blank">
             <img
               src="images/github-mark.png"
@@ -86,15 +88,16 @@
             target="_blank"
           >
             <img
-              src="images/LI-In-Bug.png"
+              src="images/li-In-Bug.png"
               alt="linkedin-icon"
               style="width: 45px"
             />
-            <span>LinkedIn</span>
+            <span>linkedIn</span>
             <p>Gyeongjin lee</p>
           </a>
         </div>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
