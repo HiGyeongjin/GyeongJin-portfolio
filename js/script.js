@@ -15,3 +15,10 @@ let text = document.querySelectorAll("ul li a").forEach((text) => {
     )
     .join("");
 });
+
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}

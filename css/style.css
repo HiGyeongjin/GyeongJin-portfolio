@@ -5,16 +5,21 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 ul,
 li,
 a {
   list-style: none;
   text-decoration: none;
 }
-nav {
+#desktop-nav {
   display: flex;
+  float: left;
   justify-content: center;
   align-items: center;
+  width: 25vw;
   min-height: 100vh;
   background-color: #222;
   cursor: none;
@@ -39,9 +44,9 @@ nav {
 
 .navlist li a span {
   position: relative;
-  font-size: 2.5em;
+  font-size: 2em;
   letter-spacing: 0.05em;
-  transition: 0.25s;
+  transition: 0.2s;
   text-transform: uppercase;
 }
 
@@ -68,6 +73,114 @@ nav:hover #cursor {
   opacity: 1;
 }
 
+.logo {
+  font-size: 2rem;
+}
+.logo:hover {
+  cursor: default;
+}
+
+#hamburger-nav {
+  display: none;
+}
+#hamburger-nav-style {
+  display: flex;
+  justify-content: space-around;
+  height: 17vh;
+  width: 100%;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: #444;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 13px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(8px, 4px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(8px, -4px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:nth-child(2) {
+  opacity: 1;
+}
+
+.hamburger-icon span:last-child {
+  transform: none;
+}
+
 #copyText {
   cursor: pointer;
+}
+
+#profileImage {
+  border-radius: 50%;
+  height: 350px;
 }
