@@ -187,15 +187,14 @@ nav:hover #cursor {
 /* images */
 
 #profileImage {
-  border-radius: 50%;
-  height: 350px;
-  margin-left: 16%;
+  border-radius: 50rem;
 }
 
-#aboutImage {
-  height: 70vh;
+#about-pic {
   border-radius: 2rem;
 }
+
+/* SECTION */
 
 section {
   padding-top: 4vh;
@@ -205,12 +204,12 @@ section {
 }
 
 .section-container,
-#profile,
 .section_pic-container {
   display: flex;
 }
 
 #profile {
+  display: flex;
   justify-content: center;
   gap: 5rem;
   height: 100vh;
@@ -219,6 +218,7 @@ section {
 .section_pic-container {
   height: 400px;
   width: 400px;
+  justify-content: center;
   margin: auto 0;
 }
 
@@ -326,10 +326,6 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
 }
 
 .arrow {
