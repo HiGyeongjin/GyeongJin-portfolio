@@ -11,12 +11,11 @@
     <header>
       <nav id="desktop-nav">
         <ul class="navlist">
-          <li><a href="#introduce">Introduce</a></li>
+          <li><a href="#">Introduce</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
-          <li>
-            <a href="https://github.com/HiGyeongjin" target="_blank">Contact</a>
-          </li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <div id="cursor"></div>
         </ul>
       </nav>
@@ -30,9 +29,12 @@
               <span></span>
             </div>
             <div class="menu-links">
-              <li><a href="#profile" onClick="toggleMenu()">Introduce</a></li>
+              <li><a href="#" onClick="toggleMenu()">Introduce</a></li>
               <li><a href="#about" onClick="toggleMenu()">About</a></li>
-              <li><a href="#project" onClick="toggleMenu()">Project</a></li>
+              <li>
+                <a href="#experience" onClick="toggleMenu()">Experience</a>
+              </li>
+              <li><a href="#project" onClick="toggleMenu()">Projects</a></li>
               <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
             </div>
           </div>
@@ -50,7 +52,7 @@
         </div>
         <div class="section_text">
           <p class="section_text_p1">Hello, my name is</p>
-          <h1 class="title">Gyeong Jin Lee</h1>
+          <h1 class="title">Gyeong Jin Lee (Jina)</h1>
           <p class="section_text_p2">Web developer</p>
           <div class="btn-containger">
             <button
@@ -346,45 +348,73 @@
           src="images/down-arrow.png"
           alt="Arrow icon"
           class="icon arrow"
-          onclick="location.href='./#project'"
+          onclick="location.href='./#contact'"
         />
       </section>
-      <section></section>
-      <section>
-        <h1>Contact</h1>
-        <div>
-          <div id="copyText" onclick="copyText()">
-            <span>Mobile</span>
-            <p>778-829-2686</p>
-          </div>
-          <div id="copyText" onclick="copyText()">
-            <span>Email</span>
-            <p>gyeongjin.lee53@gmail.com</p>
-          </div>
-          <a href="https://github.com/HiGyeongjin" target="_blank">
+      <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="images/email.png"
+              alt="Email icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="mailto:gyeongjin.lee53@gmail.com">
+                gyeongjin.lee53@gmail.com
+              </a>
+            </p>
+            <img
+              src="images/cell-phone.png"
+              alt="Mobile icon"
+              class="icon contact-icon"
+            />
+            <p>
+              <a href="mailto:gyeongjin.lee53@gmail.com"> 778-829-2686 </a>
+            </p>
             <img
               src="images/github-mark.png"
-              alt="github-icon"
-              style="width: 45px"
+              alt="Github-icon"
+              class="icon contact-icon"
             />
-            <span>GitHub</span>
-            <p>HiGyeongjin</p>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/gyeongjin-lee-46372523a/"
-            target="_blank"
-          >
+            <p>
+              <a href="https://github.com/HiGyeongjin" target="_blank"
+                >Github
+              </a>
+            </p>
             <img
-              src="images/li-In-Bug.png"
-              alt="linkedin-icon"
-              style="width: 45px"
+              src="images/LI-In-Bug.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
             />
-            <span>linkedIn</span>
-            <p>Gyeongjin lee</p>
-          </a>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/gyeongjin-lee-46372523a/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </div>
         </div>
       </section>
     </main>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#" class="link-hover">Introduce</a></li>
+            <li><a href="#about" class="link-hover">About</a></li>
+            <li><a href="#experience" class="link-hover">Experience</a></li>
+            <li><a href="#project" class="link-hover">Projects</a></li>
+            <li><a href="#contact" class="link-hover">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Gyeong Jin Lee. All Rights Reserved</p>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
