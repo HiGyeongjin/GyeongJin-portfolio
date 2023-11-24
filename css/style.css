@@ -395,6 +395,7 @@ article .icon {
 
 #project {
   position: relative;
+  height: fit-content;
 }
 
 .color-container {
@@ -483,6 +484,7 @@ footer nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
+  height: fit-content;
 }
 
 .link-hover:hover {
