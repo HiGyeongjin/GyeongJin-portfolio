@@ -424,6 +424,10 @@ article .icon {
   flex-direction: column;
 }
 
+.description {
+  margin: 1rem;
+}
+
 /* CONTACT */
 
 #contact {
@@ -490,5 +494,5 @@ footer nav {
 .link-hover:hover {
   text-decoration: underline;
   text-decoration-color: rgb(181, 181, 181);
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.5rem;
 }
